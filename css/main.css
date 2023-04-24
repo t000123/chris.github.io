@@ -1,7 +1,5 @@
 a{
 	color:#e68a30;
-	font-family: 'Roboto';
-			font-size: 12px
 }
 
 	a {
@@ -13,7 +11,30 @@ a:link {
 			font-size: 24px
 }		
 
-
+.topnav{
+			overflow: hidden;
+			background-color: none;
+		}
+.topnav a {
+			float: left;
+			color: #e68a30;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 24px;
+		}
+.topnav a:hover{
+			background-color: black;
+			color:#e68a30;
+		}
+.topnav a.active {
+			background-color: #e68a30;
+			color: white;
+		}
+.col{
+	align-content: center;
+	padding: 0 30%;
+}
 
 
 
