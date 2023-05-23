@@ -12,56 +12,51 @@
  	 <meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
- 
 
   	<link rel="stylesheet" href="css/main.css">
-</head>
 
 
-<style>
- 		
+  </head>
+
+  <style>
+  	
 body {
 
-			background-image: url("back.jpg");
-			width: 100%;
-			background-repeat: no-repeat;
-			background-position: center middle;
-			background-color: #030511;	
+            background-image: url("back.jpg");
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center middle;
+            background-color: #030511;  
 
-	}
+    }
 
 .modal-header{
-	color: transparent;
+    color: transparent;
 }
 .modal-body{
-	color: transparent;
+    color: transparent;
+}
+.footer{
+	padding: 10px;
+
 }
 
+  </style>
 
+  <body>
 
-
-	</style>
-
-
-
-
-
-
-	
-	
-<body>
-       <div class="container-fluid">
-        
+     <div class="container-fluid">
         <div class="row">
           <div class='col-sm-1'>
             <nav class="navbar navbar-expand-sm">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
+                  <li class="footer">
                   	<img class="img-fluid" src="images/logo.png" class="logo">
                   </li>
                 </ul>
           </div>
-    
+       
+          
           <div class='col-sm-3'>
               <nav class="navbar navbar-expand-sm">
                 <ul class="navbar-nav">
@@ -81,148 +76,209 @@ body {
 
            <div class='col-sm-8'>
             
-                  	<a href="https://twitter.com/navanuart">
-                  		<img src="images/twitter.png" class="logo">
-                  	</a>
+                    <a href="https://twitter.com/navanuart">
+                        <img src="images/twitter.png" class="logo">
+                    </a>
             
             
           </div>
+    </div>
 
-<!-- photo grid -->
-  
+<!-- Carousel -->
+
+
+  <!-- links into the carousel -->
+
  <div class="container">
         
         <div class="photo-gallery">
           <div class="column">
-          	<a data-bs-toggle="modal" href=“#ExampleControls”
- 				data-bs-target="#exampleModal" data-bs-slide-to="0">
-          		<div class="photo">
-          			<img  src="images/image1.jpg" alt="">
-          		</div>
-          	</a>
+            <a data-bs-slide-to="0" class="active" id="b1" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-target="#exampleModal" data-bs-slide-to="0">
+                <div class="photo">
+                    <img  src="images/image1.jpg" alt="">
+                </div>
+            </a>
 
         </div>
-         	<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="1">
-          		<div class="photo">
-          			<img src="images/image2.jpg" class="d-block w-100" alt="...">
-          		</div>
-          	</a>
-          	<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="2">
-          		<div class="photo">
-          			<img src="images/image3.jpg" class="d-block w-100" alt="...">
-          		</div>
-          	</a>
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal"data-bs-slide-to="1" id="b2">
+                <div class="photo">
+                    <img src="images/image2.jpg" class="d-block w-100" alt="...">
+                </div>
+            </a>
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal"data-bs-slide-to="2" id="b3">
+                <div class="photo">
+                    <img src="images/image3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </a>
         </div>
+
         <div class="photo-gallery">
           <div class="column">
-          	<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="3">
-          		<div class="photo">
-          			<img  src="images/image4.jpg" class="d-block w-100" alt="...">
-         		</div>
-         	</a>
-         	<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="4">
-          		<div class="photo">
-          			<img src="images/image5.jpg" class="d-block w-100" alt="...">
-          		</div>
-          	</a>
-          	<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="5">
-          		<div class="photo">
-          			<img src="images/image6.jpg" class="d-block w-100" alt="...">
-          		</div>
-          	</a>
-          	</div>
+            <a data-bs-slide-to="3" class="active" id="b4" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-target="#exampleModal" data-bs-slide-to="1">
+                <div class="photo">
+                    <img  src="images/image4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </a>
+            <a data-bs-slide-to="4" class="active" id="b5" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-target="#exampleModal" data-bs-slide-to="1">
+                <div class="photo">
+                    <img src="images/image5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </a>
+            <a data-bs-slide-to="5" class="active" id="b6" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-target="#exampleModal" data-bs-slide-to="1">
+                <div class="photo">
+                    <img src="images/image6.jpg" class="d-block w-100" alt="...">
+                </div>
+            </a>
+            </div>
         <div class="photo-gallery">
-          	<div class="column">
-          	<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="6">
-          		<div class="photo">
-          			<img  src="images/image7.jpg" class="d-block w-100" alt="...">
-         		</div>
-         	</a>
-         	<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="7">
-          		<div class="photo">
-          			<img src="images/image8.jpg" class="d-block w-100" alt="...">
-          		</div>
-          	<a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-slide-to="8">
-          		<div class="photo">
-          			<img src="images/image9.jpg" class="d-block w-100" alt="...">
-          		</div>
-          	</a>
-          	</div>
+            <div class="column">
+            <a data-bs-slide-to="6" class="active" id="b7" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-target="#exampleModal" data-bs-slide-to="1">
+                <div class="photo">
+                    <img  src="images/image7.jpg" class="d-block w-100" alt="...">
+                </div>
+            </a>
+            <a data-bs-slide-to="7" class="active" id="b8" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-target="#exampleModal" data-bs-slide-to="1">
+                <div class="photo">
+                    <img src="images/image8.jpg" class="d-block w-100" alt="...">
+                </div>
+            <a data-bs-slide-to="8" class="active" id="b9" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-bs-target="#exampleModal" data-bs-slide-to="1">
+                <div class="photo">
+                    <img src="images/image9.jpg" class="d-block w-100" alt="...">
+                </div>
+            </a>
+            </div>
 
         </div>
  </div>
          
-
-
+ 
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-interval="false">
-                        <div class="carousel-inner overflow-hidden">
-                            <div class="carousel-item active">
-                                <img src=images/image1.jpg class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image3.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image4.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image5.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image6.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image7.jpg" class="d-block w-100" alt="...">
-                            </div>
+  <div class="modal-dialog">
+    <div class="modal-content"> 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		
+		<!--modal body-->
+     	<div class="modal-body">
 
-                            <div class="carousel-item">
-                                <img src="images/image8.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/image9.jpg" class="d-block w-100" alt="...">
-                            </div>
+    	<!-- The slideshow/carousel -->
+    	<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+      				<img src="images/image1.jpg" class="d-block w-100">
+    			</div>
+   				<div class="carousel-item">
+      				<img src="images/image2.jpg" class="d-block w-100">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="images/image3.jpg" class="d-block w-100">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="images/image4.jpg" class="d-block w-100">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="images/image5.jpg" class="d-block w-100">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="images/image6.jpg" class="d-block w-100">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="images/image7.jpg" class="d-block w-100">
+    			</div>
 
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-      
+    			<div class="carousel-item">
+      				<img src="images/image8.jpg" class="d-block w-100">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="images/image9.jpg" class="d-block w-100">
+    			</div>
 
-	
+  			</div>
+  			<!-- Left and right controls/icons -->
+  			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+    			<span class="carousel-control-prev-icon"></span>
+ 			</button>
+  			<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+    			<span class="carousel-control-next-icon"></span>
+  			</button>
+		</div>
+		<!--end carousel-->
 
-	
+      	</div>
+		<!--end modal content-->
+    </div>
+    <!--end modal body-->
+</div>
+<!--end modal dialog-->
+</div>
+<!--end modal-->
 
 
 
+    
 
-
-
-
- 
-</body>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+ 
+<script>
 
+    var btn1 = document.getElementById("b1");
+    var btn2 = document.getElementById("b2");
+    var btn3 = document.getElementById("b3");
+    var btn4 = document.getElementById("b4");
+    var btn5 = document.getElementById("b5");
+    var btn6 = document.getElementById("b6");
+    var btn7 = document.getElementById("b7");
+    var btn8 = document.getElementById("b8");
+    var btn9 = document.getElementById("b9");
+    
+   
+    var element = document.getElementById("carousel");
 
+    // Create a carousel instance
+    var myCarousel = new bootstrap.Carousel(element);
 
+    btn1.addEventListener("click", function(){
+        myCarousel.to(0);
+    });
+    btn2.addEventListener("click", function(){
+        myCarousel.to(1);
+    });
+    btn3.addEventListener("click", function(){
+        myCarousel.to(2);
+    });
+     btn4.addEventListener("click", function(){
+        myCarousel.to(3);
+    });
+     btn5.addEventListener("click", function(){
+        myCarousel.to(4);
+    });
+     btn6.addEventListener("click", function(){
+        myCarousel.to(5);
+    });
+     btn7.addEventListener("click", function(){
+        myCarousel.to(6);
+    });
+     btn8.addEventListener("click", function(){
+        myCarousel.to(7);
+    });
+     btn9.addEventListener("click", function(){
+        myCarousel.to(8);
+    });
+    
+
+</script>
+
+</body>
 
 </html>
